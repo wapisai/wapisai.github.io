@@ -1,0 +1,146 @@
+  :root {
+    --purple-100: hsl(254, 88%, 90%);
+    --purple-500: hsl(256, 67%, 59%);
+    --yellow-100: hsl(31, 66%, 93%);
+    --yellow-500: hsl(39, 100%, 71%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 7%);
+    --font-family: 'DM Sans', sans-serif;
+    --font-size-paragraph: 18px;
+  }
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal-width columns */
+    grid-template-rows: auto; /* Automatic row heights */
+    grid-template-areas: 
+      "create header header schedule"
+      "create header header schedule"
+      "create manage maintain schedule"
+      "write manage maintain schedule"
+      "write audience grow grow"
+      "write audience grow grow";
+    gap: 20px;
+    max-width: 1440px;
+    margin: 30;
+    padding: 20px;
+    background-color: hsl(0, 21%, 95%);
+  }
+  header {
+    background-color: hsl(256, 67%, 59%);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    grid-column: span 2;
+    font-family: var(--font-family);
+  }
+  div.manage-multiple-accounts {
+    grid-area: manage;
+    background-color: hsl(0, 0%, 100%);
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding: 2rem;
+    border-radius: 10px;
+    font-family: var(--font-family);
+    font-size: 25px;
+  }
+  div.maintain-consistent {
+    grid-area: maintain;
+    background-color: hsl(39, 100%, 71%);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    font-family: var(--font-family);
+    overflow: hidden;
+  }
+  div.schedule-to-social-media {
+    grid-area: schedule;
+    background-color: hsl(254, 88%, 90%);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    font-family: var(--font-family);
+    overflow: hidden;
+  }
+  div.grow-followers {
+    display: flex;
+    grid-area: grow;
+    background-color: hsl(256, 67%, 59%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    font-family: var(--font-family);
+  }
+  div.faster-audience-growth {
+    grid-area: audience;
+    background-color: hsl(0, 0%, 100%);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    font-family: var(--font-family);
+  }
+  div.create-and-schedule {
+    grid-area: create;
+    background-color: hsl(31, 66%, 93%);
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding: 2rem;
+    border-radius: 10px;
+    font-size: x-large;
+    font-family: var(--font-family);
+  }
+  div.write-using-ai {
+    grid-area: write;
+    background-color: hsl(39, 100%, 71%);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    font-family: var(--font-family);
+  }
+  .image-header {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .image-manage-multiple-accounts {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .image-maintain-consistent {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .image-schedule-to-social-media {
+    width: 150%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .image-grow-followers {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .image-faster-audience-growth {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .image-create-and-schedule {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .image-write-using-ai {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
